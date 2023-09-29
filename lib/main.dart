@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:materi_flutter_dasar/dynamic_apps.dart';
 import 'package:materi_flutter_dasar/extract_widget.dart';
 import 'package:materi_flutter_dasar/list_tile_latihan.dart';
 import 'first_screen.dart';
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const ExtractWidget(),
+      home: const DynamicApps(),
     );
   }
 }
