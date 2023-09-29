@@ -45,6 +45,11 @@ class ChatItem extends StatelessWidget {
         backgroundImage: NetworkImage(imageUrl!),
       ),
       trailing: Text('10:00 AM'),
+      onTap: () {
+        SnackBar snackBar = SnackBar(content: Text(title.toString()));
+
+        ScaffoldMessenger.of(context).showSnackBar(snackBar);
+      },
     );
   }
 }
