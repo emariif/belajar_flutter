@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:materi_flutter_dasar/dynamic_apps.dart';
 import 'package:materi_flutter_dasar/extract_widget.dart';
 import 'package:materi_flutter_dasar/list_tile_latihan.dart';
+import './pages/page_satu.dart';
 import 'first_screen.dart';
 import 'list_view_latihan.dart';
 
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const DynamicApps(),
+      home: const PageSatu(),
     );
   }
 }
