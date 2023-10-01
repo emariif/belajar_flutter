@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:materi_flutter_dasar/routes/gallery_page.dart';
 
 class HomePage extends StatelessWidget {
+  // Digunakan jika kita hafal nama routenya
+  static const nameRoute = '/homepage';
   const HomePage({Key? key}) : super(key: key);
 
   @override
@@ -17,7 +20,7 @@ class HomePage extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          Navigator.of(context).pushNamed('/gallerypage');
+          Navigator.of(context).pushNamed(GalleryPage.nameRoute);
         },
         child: const Icon(Icons.arrow_forward_ios),
       ),

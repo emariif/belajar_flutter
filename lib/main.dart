@@ -27,11 +27,16 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: const HomePage(),
-      initialRoute: '/homepage',
+      initialRoute: HomePage.nameRoute,
       routes: {
-        '/homepage':(context) => const HomePage(),
-        '/gallerypage':(context) => const GalleryPage(),
-        '/photopage':(context) => const PhotoPage(),
+        // '/homepage':(context) => const HomePage(),
+        // '/gallerypage':(context) => const GalleryPage(),
+        // '/photopage':(context) => const PhotoPage(),
+
+        // Digunakan jika kita hafal nama routenya
+        HomePage.nameRoute:(context) => const HomePage(),
+        GalleryPage.nameRoute:(context) => const GalleryPage(),
+        PhotoPage.nameRoute:(context) => const PhotoPage(),
       },
     );
   }
