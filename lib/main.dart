@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:materi_flutter_dasar/dynamic_apps.dart';
 import 'package:materi_flutter_dasar/extract_widget.dart';
 import 'package:materi_flutter_dasar/list_tile_latihan.dart';
+import 'package:materi_flutter_dasar/routes/gallery_page.dart';
+import 'package:materi_flutter_dasar/routes/home_page.dart';
+import 'package:materi_flutter_dasar/routes/photo_page.dart';
 import './pages/page_satu.dart';
 import 'first_screen.dart';
 import 'list_view_latihan.dart';
@@ -23,7 +26,13 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const PageSatu(),
+      home: const HomePage(),
+      initialRoute: '/homepage',
+      routes: {
+        '/homepage':(context) => const HomePage(),
+        '/gallerypage':(context) => const GalleryPage(),
+        '/photopage':(context) => const PhotoPage(),
+      },
     );
   }
 }
